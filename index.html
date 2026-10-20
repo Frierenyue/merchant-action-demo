@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#355e43">
+  <meta name="description" content="小微商户商机雷达演示：填写门店信息，查看周边依据，把本周建议变成一次行动。">
+  <title>沃商圈 · 小微商户商机雷达</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="沃商圈首页">沃商圈<span>小微商户商机雷达</span></a>
+    <nav aria-label="演示角色"><button data-view="merchant">商户端</button><button data-view="manager">客户经理端</button></nav>
+    <div class="header-right"><span>合作提案演示</span><button id="about" class="icon-btn" aria-label="资料与演示说明">⋯</button></div>
+  </header>
+  <main id="main"></main>
+  <footer class="footer"><span>公开资料快照 + 模拟经营场景 · 非联通官方产品</span><button id="source-footer">资料依据与边界 ↗</button></footer>
+  <dialog id="dialog" aria-labelledby="dialog-label"><div class="dialog-head"><span id="dialog-label"></span><button id="close-dialog" class="icon-btn" aria-label="关闭弹窗">×</button></div><div id="dialog-body"></div></dialog>
+  <div id="toast" class="toast" role="status"></div>
+</body>
+</html>
